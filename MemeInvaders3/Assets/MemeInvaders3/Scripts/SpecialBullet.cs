@@ -25,7 +25,7 @@ public class SpecialBullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Enemy2")
         {
 
             other.gameObject.GetComponent<SovietHealth>().HurtSoviet(damageBomb);
